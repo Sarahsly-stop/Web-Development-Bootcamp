@@ -6,6 +6,7 @@
 }
 .fluteimg{
     border-radius: 20%;
+
 }
 .climb{
     border-radius: 20%;
@@ -24,4 +25,8 @@ h4{
 }
 .name{
     color:#B80000;
+}
+.nav-link{
+    color: #116D6E ;
+    font-family: sans-serif;
 }
