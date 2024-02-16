@@ -776,12 +776,19 @@ body, html {
   min-height: 100vh; /* Ensure the page takes at least the full viewport height */
   font-family: monospace;
   font-size: 15px;
+  background-color: rgba(243, 206, 206, 0.253);
+  margin-top: 10px;
+  margin-bottom: 10px;
+ 
 }
 
 .resume-page .row {
   display: flex;
   flex: 1;
-  border: 1px solid #ccc;
+  border: 20px solid #f5b4b47e;
+  margin-bottom: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .resume-page .column {
@@ -791,30 +798,28 @@ body, html {
 }
 .skills{
   background-color: rgba(241, 98, 98, 0.329);
-  font-size: 1.5rem;
+  font-size: 2rem;
   color: white;
   font-weight: bold;
+  letter-spacing: 7px;
+  
 }
 .exp{
   background-color:rgba(241, 98, 98, 0.329) ;
-  font-size: 1.5rem;
+  font-size: 2rem;
   color: white;
   font-weight: bold;
+  letter-spacing: 7px;
+  
 }
 .ed{
   background-color:rgba(241, 98, 98, 0.329) ;
-  font-size: 1.5rem;
+  font-size: 2rem;
   color: white;
   font-weight: bold;
+  letter-spacing: 7px;
 }
 
- .downloadbtn{
-  display: inline-block;
-  text-align: center;
- }
-  
 
-
-  
   
 
