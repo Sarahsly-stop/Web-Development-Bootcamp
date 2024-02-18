@@ -52,3 +52,10 @@ $(document).ready(function() {
         window.location.href = 'index.html'; 
     });
 });
+
+$(document).ready(function() {
+    $('.resumedwnld').click(function(e) {
+        e.preventDefault(); 
+        window.location.href = './slwresumenew2.pdf'; 
+    });
+});
