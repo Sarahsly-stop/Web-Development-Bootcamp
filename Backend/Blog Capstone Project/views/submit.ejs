@@ -1,0 +1,41 @@
+<!-- views/new.ejs -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <link rel="stylesheet" href="styles/main.css"> 
+</head>
+<body>
+    <form action="/create" method="post">
+        <h2>Let Your Heart Out</h2>
+    
+        <!-- Your post creation fields -->
+        <div class="input-container">
+          <i class="fa fa-pencil icon"></i>
+          <label for="title">Title:</label>
+          <input type="text" id="title" name="title" required>
+        </div>
+    
+        <div class="input-container">
+          <i class="fa fa-file-text icon"></i>
+          <label for="content">Content:</label>
+          <textarea id="content" name="content" required></textarea>
+        </div>
+    
+        <div class="input-container">
+          <i class="fa fa-list icon"></i>
+          <label for="category">Pick a Category:</label>
+          <select id="category" name="category" required>
+            <option value="art">Travel</option>
+            <option value="music">Music</option>
+            <option value="cooking">Cooking</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+    
+        <button type="submit" class="btn">Submit</button>
+      </form>
+    </body>
+    </html>

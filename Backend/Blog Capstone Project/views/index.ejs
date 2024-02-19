@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <link rel="stylesheet" href="styles/main.css"> 
+</head>
+<body>
+  <h1>Welcome!</h1>
+  <h2>Let your heart out and explore new topics!</h2>
+  
+  <!-- Button to create a new post -->
+  <button class="newpostbtn"><a href="/submit">Submit a New Post</a> </button>
+
+  <!-- Button to view a random post by category -->
+  <div class="randomPostPicker">
+  <form action="/random" method="get">
+    <label for="category">View Random Post by Category:</label>
+    <select id="category" name="category" required>
+      <option value="art">Art</option>
+      <option value="music">Music</option>
+      <option value="cooking">Cooking</option>
+      <option value="other">Other</option>
+    </select>
+    <button type="submit">Go</button>
+  </form>
+</div>
+  <!-- List of all posts -->
+  <ul>
+    <% posts.forEach((post, index) => { %>
+      <li>
+        <a href="/posts/<%= index %>"><%= post.title %></a> (Category: <%= post.category %>)
+      </li>
+    <% }); %>
+  </ul>
+</body>
+</html>
